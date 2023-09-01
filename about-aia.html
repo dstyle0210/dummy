@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>회사소개 | AIA 프리미어 파트너스</title>
+	<meta name="description" content="AIA와 함께하는 미래 AIA 프리미어 파트너스">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="AIA 프리미어 파트너스">
+	<meta property="og:description" content="AIA와 함께하는 미래 AIA 프리미어 파트너스">
+	<meta property="og:image" content="assets/images/og-default1.png">
+	<link rel="stylesheet" type="text/css" href="assets/css/sub.css?v=230817_1">
+	<link rel="stylesheet" type="text/css" href="assets/css/aos.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/swiper-bundle.min.css">
+	<script src="assets/js/jquery-3.6.4.min.js"></script>
+	<script src="assets/js/jquery-ui.min.js"></script>
+	<script src="assets/js/aos.js"></script>
+	<script src="assets/js/swiper-bundle.min.js"></script>
+	<script src="assets/js/common.js?v=230816_1"></script>
+	<script>
+	$(function(){
+		$("#tabs").tabs();
+	});
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div class="grid">
+				<h1>
+					<a href="index.html"><img src="assets/images/pp-logo.png" class="pp" alt="AIA 프리미어 파트너스"></a>
+				</h1>
+				<nav>
+					<ul class="gnb">
+						<li class="g1 active">
+							<a href="about-aia.html">회사소개</a>
+							<ul class="snb">
+								<li class="active"><a href="about-aia.html">회사소개</a></li>
+								<li><a href="ceo-greeting.html">CEO 인사말</a></li>
+								<li><a href="branch.html">지점 안내</a></li>
+								<li><a href="partner.html">제휴사</a></li>
+							</ul>
+						</li>
+						<li><a href="recruitment.html">인재채용</a></li>
+						<li><a href="notice.html">공지사항</a></li>
+					</ul>
+					<div class="bg-snb"></div>
+				</nav>
+				<a href="javascript:;" class="btn-menu">
+					<span><i></i><i></i><i></i></span>
+				</a>
+			</div>
+		</header>
+		<!--// header -->
+
+		<!-- 20230831 , UI변경 -->
+		<div class="aboutBg" id="aboutBg"></div>
+		<div class="about about-aia3" id="aboutContent">
+			<div class="cont">
+				<p>AIA 프리미어 파트너스는</p>
+				<p><span class="line-break1200over">AIA생명의 자회사로</span> 국내 최고의 금융 전문가들이 모여</p>
+				<p><span class="line-break1200over">다양한 보험 판매와 금융 서비스를 제공하는</span> 판매 전문 회사입니다.</p>
+				<p><span class="line-break1200over">AIA생명의 글로벌 자산과 경험을 바탕으로</span> 차별화된 고객 경험을 제공하겠습니다.</p>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				const top = $("#aboutContent").offset().top;
+				const quarter = $("#aboutContent").height()/4;
+				const grid = Array.from(Array(5).keys()).map((idx)=> (idx*quarter)+top );
+				const ticks = Array.from(Array(4).keys()).map((idx) => (grid[idx] + grid[idx+1])/2);
+				$(window).on("scroll",() => {
+					const idx = ticks.findIndex((top)=> ($(window).scrollTop() < top) );
+					$("#aboutContent p").removeClass("-show").eq(idx).addClass("-show");
+				});
+			});
+		</script>
+		<!-- // 20230831 , UI변경 -->
+
+
+
+		<!--// about-aia2 -->
+		<section class="why-aia">
+			<div class="grid min">
+				<p>
+					<span class="logo"><img src="assets/images/hlbl-and-pp-logo.png" alt=""></span>
+					AIA생명은 100년의 역사를 자랑하는 세계 최대 규모의 생명보험그룹입니다. 바른 가치관을 지닌 설계사와 함께 고객들에게 맞춤형 보장과 서비스를 제공하고 진정한 보험의 가치를 전달하고자 합니다. AIA 프리미어 파트너스는 고객을 최우선 가치로 삼고 보험의 지속 가능한 미래를 위한 기준을 만들겠습니다.
+				</p>
+				<h3 class="s-tit">AIA 프리미어 파트너스의 특별한 가치</h3>
+			</div>
+		</section>
+		<!--// why-aia -->
+		<section class="container value">
+			<div class="grid full">
+				<div id="tabs">
+					<ul class="tab t3 min">
+						<li><a href="#value-1">글로벌 노하우와 자산</a></li>
+						<li><a href="#value-2">성장을 위한 최적의 환경</a></li>
+						<li><a href="#value-3">헬스케어 상품과 서비스</a></li>
+					</ul>
+					<!-- Tab1 -->
+					<div id="value-1" class="swiper--carousel">
+						<h4>토트넘 홋스퍼와 함께하는 특별한 경험</h4>
+						<div class="swiper slide1">
+							<div class="swiper-wrapper">
+								<!-- repeat unit -->
+								<div class="swiper-slide">
+									<ul>
+										<li class="img-block"><img src="assets/images/value-img1-1.png" alt=""></li>
+										<li class="img-caption">AIA그룹은 토트넘 홋스퍼의 메인 스폰서로서 고객들을 위한 여러 프로그램과 이벤트를 운영합니다. 모든 고객들이 '더 건강하게, 더 오랫동안, 더 나은 삶'을 경험할 수 있도록 항상 응원하며 지원하고 있습니다.</li>
+									</ul>
+								</div>
+								<!--// repeat unit -->
+								<div class="swiper-slide">
+									<ul>
+										<li class="img-block"><img src="assets/images/value-img1-2.png" alt=""></li>
+										<li class="img-caption">또한 AIA 축구 교실을 운영하여 축구를 접할 기회가 적은 지역의 어린이들이 토트넘 글로벌 코치의 지도를 받아건강한 삶을 경험할 수 있도록 돕습니다.</li>
+									</ul>
+								</div>
+								<div class="swiper-slide">
+									<ul>
+										<li class="img-block"><img src="assets/images/value-img1-3.png" alt=""></li>
+										<li class="img-caption">글로벌 그룹의 자부심을 느낄 수 있는 AIA만의 특별한 프로그램으로 '더 건강하게, 더 오랫동안, 더 나은 삶'과 함께하는 건강한 성장을 이뤄내세요.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+					<!--// Tab1 -->
+
+					<!-- Tab2 -->
+					<div id="value-2" class="swiper--carousel">
+						<h4>성취와 성장을 위한 최적의 환경</h4>
+						<div class="swiper slide2">
+							<div class="swiper-wrapper">
+								<!-- repeat unit -->
+								<div class="swiper-slide">
+									<ul>
+										<li class="img-block"><img src="assets/images/value-img2-1.png" alt=""></li>
+										<li class="img-caption">AIA 프리미어 파트너스는 대상별로 세분화된 리더십 프로그램을 제공하여 누구나 눈부신 성장을 할 수 있도록 이끕니다. 리더 또는 MDRT로 성장할 수 있는 기회와 차별화된 지원을 알아보세요.</li>
+									</ul>
+								</div>
+								<!--// repeat unit -->
+								<div class="swiper-slide">
+									<ul>
+										<li class="img-block"><img src="assets/images/value-img2-2.png" alt=""></li>
+										<li class="img-caption">9년 연속 MDRT 등록 설계사 전 세계 1위, 압도적인 MDRT 등록 설계사의 숫자는 탄탄한 AIA의 성취 환경을 입증하는 객관적인 수치입니다. MDRT 달성을 위한 다양한 교육 프로그램 운영하고 MDRT 달성 후에도 해외 콘퍼런스와 세미나, 시상식 등 시야를 넓힐 수 있는 기회도 제공합니다.</li>
+									</ul>
+								</div>
+								<div class="swiper-slide">
+									<ul>
+										<li class="img-block"><img src="assets/images/value-img2-3.png" alt=""></li>
+										<li class="img-caption">아시아-태평양 지역에 성공적으로 진출해 눈부신 성장을 이룬 AIA의 노하우와 함께하세요. 디지털 세일즈 플랫폼으로 앞선 업무 환경을 지원합니다. 글로벌 그룹이 제공할 수 있는 독보적인 자산으로 놀라운 성장을 이룰 수 있습니다.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+					<!--// Tab2 -->
+
+					<!-- Tab3 -->
+					<div id="value-3" class="swiper--carousel">
+						<h4>보험을 넘어 라이프 스타일까지 책임지는 상품과 서비스</h4>
+						<div class="swiper slide3">
+							<div class="swiper-wrapper">
+								<!-- repeat unit -->
+								<div class="swiper-slide">
+									<ul>
+										<li class="img-block"><img src="assets/images/value-img3-1.png" alt=""></li>
+										<li class="img-caption">국내 최초 건강 증진형 보험 서비스인 AIA 바이탈리티로 질병예방 및 건강 관리의 중요성과 즐거움을 알립니다. 생활습관 변화와 인식개선을 통해 매일 더 건강한 삶을 살 수 있도록 보험 그 이상의 가치를 실현합니다.</li>
+									</ul>
+								</div>
+								<!--// repeat unit -->
+								<div class="swiper-slide">
+									<ul>
+										<li class="img-block"><img src="assets/images/value-img3-2.png" alt=""></li>
+										<li class="img-caption">AIA 헬스케어 서비스는 전화로 건강상담은 물론 진료 예약까지 실시간으로 제공하는 서비스 입니다. 건강검진 우대 예약, 간병인 지원 서비스, 치료 후 심리상담 등 프리미엄 케어 서비스를 경험하세요.</li>
+									</ul>
+								</div>
+								<div class="swiper-slide">
+									<ul>
+										<li class="img-block"><img src="assets/images/value-img3-3.png" alt=""></li>
+										<li class="img-caption">든든한 보장뿐 아니라 고객의 라이프스타일까지 생각하는 AIA의 보험상품과 서비스, 그리고 오직 AIA에서만 가능한 마케팅과 다양한 보상 프로그램의 혜택을 누려보세요.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+					<!--// Tab3 -->
+					<script>
+					var swiper = new Swiper(".swiper", {
+						speed: 1000,
+						spaceBetween: 48,
+						slidesPerView: "auto",
+						centeredSlides: true,
+						navigation: {
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
+						},
+						allowTouchMove: false
+					});
+					</script>
+				</div>
+			</div>
+		</section>
+		<!--// container -->
+		<footer>
+			<div class="grid">
+				<div class="link-and-info">
+					<ul class="ft-link">
+						<li><a href="financial-consumer-protection.html">금융소비자보호 규정</a></li>
+						<li><a href="financial-consumer-protection-internal.html">금융소비자보호 내부통제규정</a></li>
+						<li><a href="pi-processing.html">개인정보처리방침</a></li>
+						<li><a href="assets/files/insurance_agency_registration_certificate.pdf" target="_blank">보험대리점 등록증</a></li>
+						<li><a href="javascript:alert('추후 업데이트 예정입니다.');">판매인 신원조회</a></li>
+					</ul>
+					<ul class="ft-info">
+						<li><img src="assets/images/pp-logo-white-vertical@4x.png" alt=""></li>
+						<li>
+							<ul>
+								<li>04511 서울특별시 중구 통일로2길 16(순화동) AIA타워 5층</li>
+								<li>사업자등록번호 : 297-86-03075</li>
+								<li>AIA그룹(AIA.com)</li>
+							</ul>
+							대표전화<span class="tel">02-6040-1000</span>
+						</li>
+					</ul>
+				</div>
+				<ul class="copyright-and-others">
+					<li>Copyright © 2023. AIA Group Limited and its subsidiaries. All rights reserved.</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<!--// wrap -->
+</body>
+</html>

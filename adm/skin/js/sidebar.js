@@ -1,0 +1,14 @@
+document.write('<div class="sidebar">');
+document.write('	<h3>');
+document.write('		<a href="notice-list.html">');
+document.write('			<em>AIA Premier Partners</em>');
+document.write('			관리자페이지');
+document.write('		</a>');
+document.write('	</h3>');
+document.write('	<ul class="gnb">');
+document.write('		<li><a href="notice-list.html">뉴스</a></li>');
+document.write('		<li><a href="press-list.html">기업소식</a></li>');
+document.write('		<li><a href="branch-list.html">지점</a></li>');
+document.write('		<li class="logout"><a href="login.html">로그아웃</a></li>');
+document.write('	</ul>');
+document.write('</div>');

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>지점 | AIA Premier Partners 관리자페이지</title>
+<link rel="stylesheet" href="skin/css/adm-common.css">
+</head>
+<body>
+<div class="wrap">
+	<script src="skin/js/sidebar.js"></script>
+	<!--// sidebar -->
+	<div class="container notice">
+		<h2>지점</h2>
+		<div class="filter-top">
+			<ul class="grid-cols">
+				<li>
+					<select id="sel1">
+						<option>지역</option>
+						<option>서울</option>
+						<option>부산</option>
+						<option>대구</option>
+						<option>인천</option>
+						<option>대전</option>
+						<option>광주</option>
+						<option>울산</option>
+						<option>세종</option>
+						<option>경기</option>
+						<option>강원</option>
+						<option>충북</option>
+						<option>충남</option>
+						<option>전북</option>
+						<option>전남</option>
+						<option>경북</option>
+						<option>경남</option>
+						<option>제주</option>
+					</select>
+				</li>
+				<li>
+					<span class="ipt-and-btn">
+						<input type="text" id="txt1" name="txt1" placeholder="지점명, 주소" class="ipt">
+						<a href="javascript:;" class="btn search_btn">검색</a>
+					</span>
+				</li>
+			</ul>
+		</div>
+		<div class="flx-tbl-wrap list">
+			<ul class="flx-tbl t-hd">
+				<li class="fd-num">번호</li>
+				<li class="fd-letter2">지역</li>
+				<li class="fd-letter5">지점명</li>
+				<li class="fd-fill">주소</li>
+				<li class="fd-date">등록일</li>
+			</ul>
+			<!-- repeat unit(×20) -->
+			<ul class="flx-tbl t-bd">
+				<li class="fd-num">2</li>
+				<li class="fd-letter2">경기</li>
+				<li class="fd-letter5">수원VIP</li>
+				<li class="fd-fill fd-subject"><a href="branch-view.html">경기도 수원시 팔달구 효원로 288, 7층 (인계동, 대원콤비프라자)</a></li>
+				<li class="fd-date">2023-06-23</li>
+			</ul>
+			<!--// repeat unit(×20) -->
+			<ul class="flx-tbl t-bd">
+				<li class="fd-num">1</li>
+				<li class="fd-letter2">서울</li>
+				<li class="fd-letter5">라온</li>
+				<li class="fd-fill fd-subject"><a href="branch-view.html">서울특별시 서대문구 충정로 70, 8층 (미근동, 웨스트게이트타워)</a></li>
+				<li class="fd-date">2023-06-23</li>
+			</ul>
+			<!-- case: data not exist -->
+			<ul class="flx-tbl t-bd">
+				<li class="fd-fill">데이터가 없습니다.</li>
+			</ul>
+			<!--// case: data not exist -->
+		</div>
+		<div class="pagination inc-btn">
+			<ul class="pgn min">
+				<li><a href="javascript:;" class="prev">이전</a></li>
+				<li><input type="text" id="txt2" name="txt2" maxlength="5" value="1" class="ipt current"></li>
+				<li><a href="javascript:;" class="next">다음</a></li>
+				<li><span class="total">1</span></li>
+			</ul>
+			<a href="branch-write.html" class="btn primary">등록</a>
+		</div>
+	</div>
+	<!--// contaniner -->
+</div>
+<!--// wrap -->
+</body>
+</html>
